@@ -36,31 +36,33 @@
 
     <div class="form-content">
          <div class="login-form">
-             <div class="input-boxes">
+         <div class="boxes">
                 <div class="input-box">
-                    
                     <input type ="text" name="email" placeholder="E-mail" required>
                     <span class="icon"> <i class="fa fa-envelope" aria-hidden="true"></i></span>
                 </div>
-
+         
                 <div class="input-box">
                     <input type ="password" name="password" placeholder="Password" required>
                     <span class="icon1"> <i class="fa fa-lock" aria-hidden="true"></i></span>
                 </div>
 
-                <div class= input-checkbox">
-                <input type="checkbox" class="checkbx"  name=" chkbox" id="checkbox">
-                    <div class="remember"><a href="#">Remember me</a></div>
-                 <br>
+                <div class= "input-checkbox">
+                <input type="checkbox" class="checkbx"  name=" chkbox" id="checkbox"> 
+                    <p class="remember">Remember Me</p>
                     <div class="text"><a href="#">Forgot password?</a></div>
+               
+                    
                 </div>
 
+         </div>       
 
-                <div class= buttoninput-box">
+
+                <div class="buttoninput-box">
                 
                 <button type="submit">Log in</button>
                 </div>
-            </div>
+           
         </div>
     </div>
     </form>
