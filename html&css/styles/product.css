@@ -95,5 +95,29 @@ padding-left: 76px;
 .wrapper .section .top_navbar h3{
     font-size: 36px;
     color: #1E5631;
+}
+
+#product{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#product td, #product th{
+    border:5px solid #76BA1B;
+    padding: 8px;
+}
+
+#product tr{background-color:#ACDF87;}
+#product th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #ACDF87;
+    color: #1E5631;
+}
+.icon1{
+    margin-top: 3%;
 
 }

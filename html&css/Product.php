@@ -39,7 +39,7 @@
             <div class="top_navbar">
                     <h3>Products</h3>
                     <div class="email">
-                        <span class="icon"><i class="far fa-user-circle"></i>
+                        <span class="icon1"><i class="far fa-user-circle"></i>
                         <span class="item"><h4> Robert Dinero</h4>
                         <h5>Robertdeniro@gmail.com</h5></span>
                     </div>
@@ -47,17 +47,53 @@
         </div>
 
      </div>
+     <h3>All Products</h3>
+     <table id="product">
+         <tr>
+             <th>Image</th>
+             <th>ID</th>
+             <th>Name</th>
+             <th>Expy Date</th>
+             <th>Category</th>
+             <th>Quantity</th>
+             <th>Price</th>
+             <th>Action</th>
+        </tr>
+        <tr>
+            <td><img src="./images/img1.jpg" alt="" style="width: 250px;height: 87px"></td>
+            <td>VLbWW7XrsR</td>
+            <td>Potato</td>
+            <td><p id="expy"></p></td>
+            <td>Vegetable</td>
+            <td>400 Kg</td>
+            <td>2$ /Kg</td>
+            <td><i class="fas fa-desktop"></i><i class="fa fa-refresh" aria-hidden="false"></i><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <tr>
+            <td><img src="./images/img2.jpg" alt="" style="width: 250px;height: 87px"></td>
+            <td>VLbWW7XrsR</td>
+            <td>EggPlant</td>
+            <td><p id="expy"></td>
+            <td>Vegetable</td>
+            <td>500 Kg</td>
+            <td>1.5$ /Kg</td>
+            <td><i class="fas fa-desktop"></i><i class="fa fa-refresh" aria-hidden="false"></i><i class="fas fa-trash-alt"></i></td>
+        </tr>
+        <tr>
+            <td><img src="./images/img3.jpg" alt="" style="width: 250px;height: 87px"></td>
+            <td>VLbWW7XrsR</td>
+            <td>Mango</td>
+            <td><p id="expy"></td>
+            <td>Fruit</td>
+            <td>410 Kg</td>
+            <td>3$ /Kg</td>
+            <td><i class="fas fa-desktop"></i><i class="fa fa-refresh" aria-hidden="false"></i><i class="fas fa-trash-alt"></i></td>
+        </tr>
+
+
+    </table>
     
    
-    <script>
-
-
-
-
-
-
-
-
-    </script>
+ 
 </body>
 </html>
