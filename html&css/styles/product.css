@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: #ffffff;
+}
+
+.wrapper .sidebar{
+    background-color: rgb(118, 186 , 27);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 244px;
+    height: 100%;
+    padding: 20px 0;
+}
+
+.wrapper .sidebar .logo img{
+    display: block;
+    width: 189px;
+    height: 148px;
+    margin: 0 auto;
+    margin-top: 61px;
+}
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 0px 37px;
+    color: #1E5631;
+    font-size: 25px;
+    position: relative;
+    margin-top: 30%;
+}
+
+.wrapper .sidebar ul li .logout{
+    display: block;
+    color: #1E5631;
+    font-size: 25px;
+    position: relative;
+    margin-top: 260%;
+}
+
+
+.wrapper .sidebar ul li a .icon{
+    color: #1E5631;    
+}
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active,
+.wrapper .sidebar ul li .logout:hover{
+    color: #effce6;
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+    color: #effce6;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+    display: block;
+}
+
+.wrapper .section{
+width: calc(100% - 225px);
+margin-left: 225px;
+
+}
+    
+.wrapper .section .top_navbar{
+background: #ACDF87;
+height: 143px;
+display: flex;
+align-items: center;
+padding: 0 30px;  
+padding-left: 76px;  
+ }
+
+.wrapper .section .top_navbar .email{
+    display: block;
+    padding: 0px 37px;
+    color: #1E5631;
+    font-size: 20px;
+    position: absolute;
+    right: 0%;
+}
+
+.wrapper .section .top_navbar h3{
+    font-size: 36px;
+    color: #1E5631;
+
+}

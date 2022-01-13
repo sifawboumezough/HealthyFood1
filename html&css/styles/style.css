@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image:url('../images/background.png');
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.logo img {
+    width: 348px;
+    height: 161px;
+    margin-left: 11%;
+    margin-bottom: 4%;
+}
+
+
+form {
+    display: flex;
+
+    margin-bottom: 1%;
+}
+
+
+.text-form {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    line-height: 36px;
+    width: 45%;
+
+}
+.text-box{
+    padding: 20px;
+    color: #fff;
+}
+
+
+
+.wlc-text {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 38px;
+    align-items: flex-start;
+    margin: 60px auto;
+}
+.wlc-text h2 {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
+}
+
+.heal{
+    color: #76BA1B;
+}
+.fd {
+    color: #ACDF87;
+}
+
+
+.container {
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 7%;
+} 
+
+
+
+
+.container {
+    width: 100%;
+    padding: 40px 40px;
+}
+
+.container .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+
+
+.login-form{
+    align-items: center;
+    justify-content: space-between;
+     /* background: red;  */
+    
+}
+
+ form .form-content .input-box {
+    margin-top: 45px ;
+
+}
+
+form .form-content .input-box {
+    margin-top: 45px ;
+
+}
+
+form .form-content .input-boxes{
+    margin-top: 30px;
+
+}
+form .form-content .input-box{
+    height: 60px;
+    width: 100%;
+
+    
+}
+
+input {
+    font-family:  Helvetica;
+    font-size:32px;
+    line-height: 12px;
+    background :#76BA1B;
+    display: block;
+    border: 3px solid #FFF9F9;
+    border-radius: 20px;
+    width: 787px;
+    height: 100px;
+    margin: 10px auto;
+    padding: 16px;
+    margin-top: 10%;
+}
+
+input:after {
+    border: 3px solid #FFF9F9;
+    border-radius: 20px;
+}
+
+button {
+    color: #fff;
+    font-family:  Helvetica;
+    font-size:38px ;
+    line-height: 12px;
+    align-items: flex-start;
+    background: #68BB59;
+    padding: 10px 15px;
+    width: 400px;
+    height: 87px;
+    border-radius: 30px;
+    margin-top: 10%;
+    margin-left: 30%;
+
+}
+input#checkbox.checkbx{
+    display: flex;
+    color: blue;
+    width: 27px;
+    height: 27px;
+    margin-top: 6%;
+    margin-right: 93%;
+   
+}
+.input-checkbox {
+    width: 100px;
+    color: #fff;
+}
+
+.remember {
+    width: 110px;
+   font-family: Helvetica;
+    margin-top: -4%;
+    margin-left: 8%;
+    text-decoration: none;
+}
+.remember a {
+    color: #fff;
+}
+
+.text{
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    width: 135px;
+    margin-top: -6%;
+    margin-bottom: 34px;
+    margin-left: 83%;
+    
+}
+.text a {
+    color: #fff;
+
+}
+
+
+::placeholder {
+    margin:20px;
+    color: #fff;
+    opacity: .6;
+    font-family:  Helvetica;
+    font-size: 32px;
+    position: absolute;
+    margin-left: 8% ;
+    
+  }
+
+ 
+  .fa-envelope:before {
+    font-size: 31.5px;
+    color: #fff;
+    opacity: .6;
+    position: absolute;
+    top: 46%;
+    margin-left: 28px;
+}
+  .fa-lock:before {
+    color: #fff;
+    opacity: .6;
+    font-size: 31.5px;
+    position: absolute;
+    top: 60%;
+    margin-left: 30px;
+}
