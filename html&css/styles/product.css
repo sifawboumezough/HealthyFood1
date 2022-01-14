@@ -98,26 +98,80 @@ padding-left: 76px;
 }
 
 #product{
-    font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    margin-left: auto;
+    margin-left: 14%;
     margin-right: auto;
+    margin-top: 10%;
+    width: 85%;
 }
 
 #product td, #product th{
-    border:5px solid #76BA1B;
+    border:2px solid #76BA1B;
     padding: 8px;
 }
 
 #product tr{background-color:#ACDF87;}
-#product th{
+#product th, #product td{
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: center;
     background-color: #ACDF87;
     color: #1E5631;
 }
-.icon1{
-    margin-top: 3%;
 
+#product img{
+    width: 60px;
+    object-fit: cover;
 }
+
+
+h1{
+    position: absolute;
+    top: 276px;
+    left: 14%;    
+}
+
+  
+  .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 1px solid #000000;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 14px 0 0 14px;
+    outline: none;
+    color: rgb(118, 186 , 27, 0.3);
+  }
+  
+  .searchTerm:focus{
+    color: rgba(0, 0, 0);
+  }
+  
+  .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #1E5631;
+    background: #ffffff;
+    text-align: center;
+    color: #1E5631;
+    border-radius: 0 14px 14px 0;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 294px;
+    left: 84%;
+    transform: translate(-50%, -50%);
+  }
+
+ 

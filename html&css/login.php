@@ -50,14 +50,9 @@
                 <div class= "input-checkbox">
                 <input type="checkbox" class="checkbx"  name=" chkbox" id="checkbox"> 
                     <p class="remember">Remember Me</p>
-                    <div class="text"><a href="#">Forgot password?</a></div>
-               
-                    
+                    <div class="text"><a href="#">Forgot password?</a></div>     
                 </div>
-
          </div>       
-
-
                 <div class="buttoninput-box">
                 
                 <button type="submit">Log in</button>
