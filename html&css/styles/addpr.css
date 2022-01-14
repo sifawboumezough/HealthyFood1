@@ -13,7 +13,7 @@
 } */
 
 body{
-background: #ffffff;
+     background: #ffffff;
 }
 
 .wrapper .sidebar{
@@ -132,10 +132,8 @@ input {
     border: 3px solid #FFF9F9;
     border-radius: 50px;
     width: 510px;
-    height: 100px;
-    
+    height: 100px;  
     margin: 50px;
-  
     margin-top: 4%;
 }
 
@@ -390,3 +388,8 @@ label {
 .choose-image::placeholder {
     margin-top: 35px;
 }
+
+
+
+
+

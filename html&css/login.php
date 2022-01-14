@@ -14,7 +14,7 @@
 
 <div class="container">
         <div class="logo">
-                <img src="./images/Logo.jpg" alt="">
+                <img src="./images/Logo.jpg" >
             </div>
     <form action="#">
                 <div class="text-form">

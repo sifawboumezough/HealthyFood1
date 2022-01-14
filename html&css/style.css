@@ -8,25 +8,25 @@
  box-sizing: border-box;
 
 }
-body {
-    min-height: 100vh;
-        display: flex;
-    align-items: center;
-    justify-content: center;
+ body {
     background-image:url('../images/background.png');
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: darken;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
+} 
+/* .logo {
+    display: flex;
+    justify-content: center;
+} */
 .logo img {
     width: 348px;
     height: 161px;
-    margin-left: 11%;
-    margin-bottom: 4%;
+    margin-left: 4%;
+    top: 8%;
 }
+
 
 
 form {
@@ -192,7 +192,7 @@ input#checkbox.checkbx {
     font-family: Helvetica;
     position: absolute;
     left: 55%;
-    bottom: 26.5%;
+    bottom: 34.5%;
     text-decoration: none;
 }
 .remember a {
@@ -212,7 +212,7 @@ input#checkbox.checkbx {
 .text a {
     color: #fff;
     position: absolute;
-    bottom: 26.5%;
+    bottom: 34.5%;
 }
 
 
@@ -233,7 +233,7 @@ input#checkbox.checkbx {
     color: #fff;
     opacity: .6;
     position: absolute;
-    top: 46%;
+    top: 37.5%;
     margin-left: 28px;
 }
   
@@ -243,7 +243,154 @@ input#checkbox.checkbx {
     opacity: .6;
     font-size: 31.5px;
     position: absolute;
-    top: 64.2%;
+    top: 55.8%;
     margin-left: 30px;
     
+}
+
+
+@media only screen and (max-width : 468px) {
+    .container{
+        width: 500px;
+    }
+
+
+    /* .text-form h2{
+        display: none;
+    }
+
+    .text-box p {
+        display: none;
+    } */
+    .text-form {
+        display: none;
+    }
+   
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-top: ;
+        }
+   
+   
+    .logo img {
+        position: absolute;
+        margin-left: 7%;
+        top: 8%;
+        /* margin-bottom: ; */
+        /* margin-right: auto; */
+    }
+    .form-content {
+        
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            /* margin-left: 2%; */
+            position: relative;
+            /* top: -24%; */
+            margin-top: 32%;
+        
+    }
+
+    form .form-content .input-box {
+        height: 60px;
+        width: 100%;
+        margin-top: 17%;
+    }
+
+    input {
+        font-family: Helvetica;
+        font-size: 32px;
+        line-height: 12px;
+        background: #76BA1B;
+        /* display: block; */
+        border: 3px solid #FFF9F9;
+        border-radius: 50px;
+        width: 468px;
+        height: 100px;
+        margin: 83px auto;
+        /* padding: 12px; */
+        margin-top: 36px;
+        /* position: absolute; */
+        margin-left: -6%;
+    }
+
+    .boxes {
+        position: relative;
+        top: 83px;
+    }
+
+    ::placeholder {
+        margin-top: 2%;
+        color: #fff;
+        opacity: .6;
+        font-family:  Helvetica;
+        font-size: 32px;
+        position: absolute;
+        margin-left: 20% ;
+        
+      }
+
+      .fa-envelope:before {
+        font-size: 31.5px;
+        color: #fff;
+        opacity: .6;
+        position: absolute;
+        top: 9%;
+        margin-left: 8px;
+    }
+
+    .fa-lock:before {
+        color: #fff;
+        opacity: .6;
+        font-size: 31.5px;
+        position: absolute;
+        top: 51.2%;
+        margin-left: 7px;
+    }
+
+    input#checkbox.checkbx {
+        /* display: flex; */
+        color: blue;
+        width: 21px;
+        margin-top: 55px;
+        margin-left: 80px;
+        /* bottom: 2%; */
+        /* margin-bottom: 183px; */
+    }
+
+
+    .remember {
+        width: 110px;
+        font-family: Helvetica;
+        position: absolute;
+        left: 26%;
+        bottom: 34.5%;
+        /* text-decoration: none; */
+    }
+
+    button {
+        color: #fff;
+        font-family: Helvetica;
+        font-size: 38px;
+        line-height: 12px;
+        align-items: flex-start;
+        background: #68BB59;
+        /* padding: 10px 15px; */
+        width: 252px;
+        height: 42px;
+        border-radius: 50px;
+        margin-top: 10%;
+        margin-left: 16%;
+    }
+
+    .text a {
+        left: 32%;
+        color: #fff;
+        position: absolute;
+        top: 121.5%;
+    }
+
+
+
 }
