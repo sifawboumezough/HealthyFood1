@@ -9,10 +9,10 @@
     <title>Add Product</title>
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
         <div class="sidebar">
             <div class="logo"> 
-            <img src="./images/Logo.jpg" alt="">
+                <img src="./images/Logo.jpg" alt="">
             </div>
             <ul>
                 <li>
@@ -28,7 +28,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="login.php">
                         <span class="logout" class="icon"><i class="fas fa-sign-out-alt"></i>
                         <span class="item">Log Out</span>
                     </a>
@@ -37,57 +37,31 @@
         </div>
         <div class="section">
             <div class="top_navbar">
-                    <h3>Add Products</h3>
-                    <div class="email">
-                        <span class="icon"><i class="far fa-user-circle"></i>
-                        <span class="item"><h4> Robert Dinero</h4>
-                        <h5>Robertdeniro@gmail.com</h5></span>
-                    </div>
+                <div class="hamburger">
+                    <a href="#">
+                        <i class="fas fa-bars"></i>
+                    </a>
+                </div>
+                <div class="top-logo">
+                <img src="./images/HealthyFood.bio.png" alt=""></div>
              </div>
         </div>
-
-     </div>
-
-
+    </div>
      <div class="name-cat">
                  <div class="input-box">
                     <h2 class="Name">Name</h2>
-                    <input type ="text" name="name" placeholder="Enter the Product's Name" required>
-                    <!-- <input type ="text" name="name" placeholder="Enter the Product's Name" required> -->
-                    <div class="container">
-                    <h2>Vedio Category</h2>
-                    <div class="select-box">
-                
-               <div class="options-container">
-                  <div class="option">
-                       <input type="radio" class="radio" id="automobiles" name="category">
-                       <label for="automobiles">Automobiles</label>
-                   </div>
-
-                   <div class="option">
-                       <input type="radio" class="radio" id="film" name="category">
-                       <label for="film">Film</label>
-                   </div>
-               </div>
-
-                <div class="selected">
-                     
-                    </div>
-           </div>
-
-       </div>
+                    <input class ="prname"type ="text" name="name" placeholder="Enter the Product's Name" required>
+                 </div>
 
                  </div>
      </div>
 
      <div class="exp-pr-quan">
-                 <div class="input-box">
-                    <h2 class="exp-date">Expy Date</h2>
-                 <input type ="text" name="expirydate" placeholder="Expiration Date" required>
-                 <h2 class="price">Price</h2>
-                 <input type ="text" name="price" placeholder="Product Price" required>
-                 <h2 class="quantity">Quantity</h2>
-                 <input type ="text" name="quantity" placeholder="Quantity per Kg" required>
+                <div class="input-box">
+                    <h2 class="price">Price</h2>
+                    <input type ="text" name="price" placeholder="Product Price" required>
+                    <h2 class="quantity">Quantity</h2>
+                    <input type ="text" name="quantity" placeholder="Quantity per Kg" required>
                  </div>
      </div>
 
@@ -117,22 +91,10 @@
     
 </body>
 
- <script>
-        const selected = document.querySelector(".selected");
-        const optionsContainer = document.querySelector(".options-container");
-
-        const optionList = document.querySelectorAll(".option");
-
-        selected.addEventListener("click",() => {
-            optionsContainer.classList.toggle("active");
-        });   
-
-        optionList.forEach( o => {
-            o.addEventListener("click",() =>{
-                selected.innerHtml = o.querySelector("label").innerHTML;
-                optionsContainer.classList.remove("active");
-            });
-        });
-
+<script>
+        var hamburger = document.querySelector(".hamburger");
+        hamburger.addEventListener("click", function(){
+        document.querySelector("body").classList.toggle("active");
+    })
     </script>
 </html>
