@@ -117,15 +117,20 @@ body.active .wrapper .section{
     border-spacing: 0;
 }
 
+body:not(.active) #product{
+    width: calc(90vw - 244px);
+    margin-left: 327px;
+}
+
 #product td, #product th{
     border:2px solid #76BA1B;
-    padding: 8px;
+    padding: 51px;
 }
 
 #product tr{background-color:#ACDF87;}
 #product th, #product td{
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     text-align: center;
     background-color: #ACDF87;
     color: #1E5631;
@@ -136,6 +141,19 @@ body.active .wrapper .section{
     object-fit: cover;
 }
 
+
+.btn{
+    background-color: #ACDF87;
+    border: none;
+    color:#1E5631 ;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer; 
+}
+.btn:hover{
+    background-color: #1E5631;
+    color: #ffffff;
+}
 
 h1{
     position: absolute;
@@ -179,7 +197,6 @@ h1{
     font-size: 20px;
   }
   
-  /*Resize the wrap to see the search bar change!*/
   .wrap{
     width: 26%;
     position: absolute;

@@ -16,13 +16,13 @@
             </div>
             <ul>
                 <li>
-                    <a href="#" class="active">
+                    <a href="Product.php" class="active">
                         <span class="icon"><i class="fas fa-shopping-basket"></i>
                         <span class="item">Products</span>
                     </a>
                 </li>    
                 <li>
-                    <a href="#">
+                    <a href="addpr.php">
                         <span class="icon"><i class="fas fa-plus-circle"></i>    
                         <span class="item">Add Product</span>
                     </a>
@@ -80,7 +80,7 @@
      </div> 
 
                 <div class="buttoninput-box">
-                <button type="submit">Log in</button>
+                <button type="submit">Add Product</button>
                 </div>
 
 
