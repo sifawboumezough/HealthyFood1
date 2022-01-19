@@ -110,6 +110,7 @@ body.active .wrapper .section{
    margin-left: 35vw;
 }
 
+
 .name-cat {
     position: absolute;
     width: 1592px;
@@ -423,6 +424,9 @@ label {
         margin-left: 30%;
     }
 
+    /* .input {
+        width: 50%;
+    } */
     .buttoninput-box {
         position: absolute;
         left: 102%;
