@@ -1,3 +1,8 @@
+<?php
+                include_once "./connect/dbConn.php";
+                
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,105 +65,28 @@
                 <th>Price</th>
                 <th>Action</th>
             </tr>
+            <?php  
+              $sql = "SELECT * FROM products;"; 
+              $result = mysqli_query($conn, $sql); 
+              $resultCheck = mysqli_num_rows($result);
+              if ($resultCheck > 0){
+                while ($row = mysqli_fetch_assoc($result))
+                {
+            ?>
             <tr>
-                <td><img id="myImg" src="./images/img1.png" alt=""></td>
-                <td><div class="pID">m6wobol25p</div></td>
-                <td><div class ="Name">Potato</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
+                <td><img src="<?php echo $row["product_img"]; ?>"></td>
+                <td><?php echo $row['product_id']; ?></td>
+                <td><?php echo $row['product_name']; ?></td>
+                <td><?php echo $row['product_qty']; ?></td>
+                <td><?php echo $row['product_price']; ?></td>
+                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
             </tr>
-            <tr>
-                <td><img src="./images/img2.png" alt="" ></td>
-                <td><div class="pID">z40dqviznl</div></td>
-                <td><div class ="Name">Eggplant</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">1.5$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img3.png" alt="" ></td>
-                <td><div class="pID">m0gwydvxzs</div></td>
-                <td><div class ="Name">Pomegranate</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img4.png" alt="" ></td>
-                <td><div class="pID">r8zigu9hyb</div></td>
-                <td><div class ="Name">BlackBerry</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">3$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img5.png" alt="" ></td>
-                <td><div class="pID">j86wkry0aj</div></td>
-                <td><div class ="Name">Pear</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img6.png" alt="" ></td>
-                <td><div class="pID">tr47uxahkz</div></td>
-                <td><div class ="Name">Prune</div></td>
-                <td><p id="stock">300 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img7.png" alt=""></td>
-                <td><div class="pID">1up3he362f</div></td>
-                <td><div class ="Name">Apple</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img8.png" alt="" ></td>
-                <td><div class="pID">m54kfg1zm2</div></td>
-                <td><div class ="Name">Strawberry</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img9.png" alt="" ></td>
-                <td><div class="pID">w5quk7dwse</div></td>
-                <td><div class ="Name">Lime</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img10.png" alt=""></td>
-                <td><div class="pID">2yiwo0hexl</div></td>
-                <td><div class ="Name">Onion</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img11.png" alt="" ></td>
-                <td><div class="pID">8vi85ze9cm</div></td>
-                <td><div class ="Name">Corn</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-            <tr>
-                <td><img src="./images/img12.png" alt="" ></td>
-                <td><div class="pID">ees67rbvop</div></td>
-                <td><div class ="Name">Grape</div></td>
-                <td><p id="stock">400 Kg</p></td>
-                <td><div class ="Price">2$ /Kg</div></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button>   </td>
-            </tr>
-        </table>
-    
+            <?php
+                }
+            }
+         ?>
 
+        </table>
         </div>
     
 </div>
