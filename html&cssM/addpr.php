@@ -47,47 +47,46 @@
              </div>
         </div>
     </div>
-     <div class="name-cat">
-                 <div class="input-box">
+    
+
+    <section class="addproduct">
+            <div class="inputboxes">
+                <div class="inout-box">
                     <h2 class="Name">Name</h2>
                     <input class ="prname"type ="text" name="name" placeholder="Enter the Product's Name" required>
-                 </div>
+                </div>
 
-                 </div>
-     </div>
+                <div class="inout-box">
+               
+                
+                        <div class="two">     
+                        <h2 class="price">Price</h2>   
+                        <input  class="p-price"type ="text" name="price" placeholder="Product Price" required>
+                        <h2 class="quantity1">Quantity</h2>
+                        <input type class="p-quantity"="text" name="quantity" placeholder="Quantity per Kg" required>
+                        </div>
+                </div>
 
-     <div class="exp-pr-quan">
-                <div class="input-box">
-                    <h2 class="price">Price</h2>
-                    <input type ="text" name="price" placeholder="Product Price" required>
-                    <h2 class="quantity">Quantity</h2>
-                    <input type ="text" name="quantity" placeholder="Quantity per Kg" required>
-                 </div>
-     </div>
-
-      <div class="user-id">
-                 <div class="input-box">
+                <div class="inout-box">
                     <h2 class="ID">ID</h2>
-                 <input class="user" type ="text" name="name" placeholder="Enter the Product's ID" required>
-                 </div>
-     </div> 
+                    <input class="user" type ="text" name="name" placeholder="Enter the Product's ID" required>
+                </div>
 
-     <div class="image-pr">
-                 <div class="input-box">
+                <div class="inout-box">
                     <h2 class="Image">Image</h2>
-                 <input class="choose-image" type ="text" name="name" placeholder="Choose Image" required>
-                 </div>
-     </div> 
-
-                <div class="buttoninput-box">
-                <button type="submit">Add Product</button>
+                    <input class="choose-image" type ="text" name="name" placeholder="Choose Image" required>
                 </div>
 
 
-        
+                <button type="submit">Submit</button>
 
-    
-   
+                
+
+
+
+            </div>
+
+    </section>
     
 </body>
 

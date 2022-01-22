@@ -1,3 +1,7 @@
+<?php
+session_start();
+ ?>
+ 
  <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +20,7 @@
         <div class="logo">
                 <img src="./images/Logo.jpg" >
             </div>
-    <form action="#">
+  <form action="./includes/login-inc.php" method="post">
                 <div class="text-form">
                     <div class="wlc-text">
                         <h2>Welcome to <span class="heal">Heal</span>thy <span class="fd">Fo</span>od</h2>
@@ -33,7 +37,6 @@
 
                 </div>
 
-
     <div class="form-content">
          <div class="login-form">
          <div class="boxes">
@@ -48,24 +51,18 @@
                 </div>
 
                 <div class= "input-checkbox">
-                <input type="checkbox" class="checkbx"  name=" chkbox" id="checkbox"> 
+                <input type="checkbox" class="checkbx"  name="chkbox" id="checkbox"> 
                     <p class="remember">Remember Me</p>
                     <div class="text"><a href="#">Forgot password?</a></div>
                
-                    
                 </div>
+                <button type="submit" name="login-submit">Log in</button>
+         </div>  
 
-         </div>       
-
-
-                <div class="buttoninput-box">
-                
-                <button type="submit">Log in</button>
-                </div>
-           
-        </div>
+        </div>  
     </div>
     </form>
+
 </div>
     
     
