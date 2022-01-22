@@ -1,5 +1,5 @@
 <?php
-                include_once "./connect/dbConn.php";
+         include_once "./connect/dbConn.php";
                 
 ?>
 
@@ -70,7 +70,7 @@
               $result = mysqli_query($conn, $sql); 
               $resultCheck = mysqli_num_rows($result);
               if ($resultCheck > 0){
-                while ($row = mysqli_fetch_assoc($result))
+                while ($row = mysqli_fetch_array($result))
                 {
             ?>
             <tr>
@@ -79,7 +79,7 @@
                 <td><?php echo $row['product_name']; ?></td>
                 <td><?php echo $row['product_qty']; ?></td>
                 <td><?php echo $row['product_price']; ?></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button>  <button onclick="alertMessage()" class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button onclick="alertMessage()" class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
+                <td><button  class="btn"><i class="fas fa-desktop"></i></button> <a href="edit.php?product_id=<?php echo $row['product_id']; ?>"> <button  class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
             </tr>
             <?php
                 }
@@ -104,10 +104,6 @@
         hamburger.addEventListener("click", function(){
         document.querySelector("body").classList.toggle("active");
     })
-
-    function alertMessage(){
-        confirm("Are You Sure?");
-    }
     </script>
    
  
