@@ -79,7 +79,7 @@
                 <td><?php echo $row['product_name']; ?></td>
                 <td><?php echo $row['product_qty']; ?></td>
                 <td><?php echo $row['product_price']; ?></td>
-                <td><button  class="btn"><i class="fas fa-desktop"></i></button> <a href="edit.php?product_id=<?php echo $row['product_id']; ?>"> <button  class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
+                <td><a href="edit.php?product_id=<?php echo $row['product_id']; ?>"> <button  class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
             </tr>
             <?php
                 }
