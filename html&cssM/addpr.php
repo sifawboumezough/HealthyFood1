@@ -1,3 +1,8 @@
+
+<?php
+          require "./includes/addprdbh-inc.php";
+                
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,17 +53,15 @@
         </div>
     </div>
     
-
+<form action="includes/addpr-inc.php" method="POST"> 
     <section class="addproduct">
             <div class="inputboxes">
                 <div class="inout-box">
                     <h2 class="Name">Name</h2>
-                    <input class ="prname"type ="text" name="name" placeholder="Enter the Product's Name" required>
+                    <input class ="prname"type ="text" name="prname" placeholder="Enter the Product's Name" required>
                 </div>
 
-                <div class="inout-box">
-               
-                
+                <div class="inout-box">  
                         <div class="two">     
                         <h2 class="price">Price</h2>   
                         <input  class="p-price"type ="text" name="price" placeholder="Product Price" required>
@@ -67,18 +70,14 @@
                         </div>
                 </div>
 
-                <div class="inout-box">
-                    <h2 class="ID">ID</h2>
-                    <input class="user" type ="text" name="name" placeholder="Enter the Product's ID" required>
-                </div>
 
                 <div class="inout-box">
-                    <h2 class="Image">Image</h2>
-                    <input class="choose-image" type ="text" name="name" placeholder="Choose Image" required>
+                    <h2 class="Image">Choose a Photo</h2>
+                    <input type ="file" name="image" >
                 </div>
 
 
-                <button type="submit">Submit</button>
+                <button type="submit" name="add-product">Submit</button>
 
                 
 
@@ -87,7 +86,11 @@
             </div>
 
     </section>
-    
+ </form>
+
+
+
+ 
 </body>
 
 <script>

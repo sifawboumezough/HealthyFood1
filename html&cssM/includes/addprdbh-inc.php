@@ -7,12 +7,11 @@ $password = "";
 $dbname = "healthy_food";
 
 // Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
+$connection = mysqli_connect($servername, $username, $password, $dbname);
 
 // Check connection
-if (!$conn) {
+if (!$connection) {
   die("Connection failed: " . mysqli_connect_error());
 }
 echo "";
 ?>
-
