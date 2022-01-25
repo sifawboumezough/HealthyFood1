@@ -161,6 +161,7 @@ input {
     width: 505.2px;
     position: relative;
     right: 1%;
+    
 }
 
 .p-quantity {
@@ -213,7 +214,9 @@ input {
      margin-left: 31vw;
  }
 }
-@media only screen and (max-width: 425px) {
+
+
+@media only screen and (max-width: 468px) {
    
  .wrapper .section .top-logo img{
      margin-left: 19vw;
@@ -226,7 +229,107 @@ input {
 
 }
 
-@media only screen and (max-width : 468px){ 
+@media  screen and (max-width : 1024px){ 
+
+    input {
+        width: 700px;
+    }
+
+    .inout-box {
+        padding: 50px;
+    }
+    .inout-box h2 {
+        right: 26%;
+    }
+
+    .two {
+        display: flex;
+        position: relative;
+        left: 0%;
+    }
+    .quantity1 {
+        position: relative;
+        left: 8%;
+        margin-top: -2.5%;
+    }
+    .price {
+        position: relative;
+        left: 10%;
+        margin-top: -2.5%;
+    }
+
+    button {
+        height: 68px;
+        left: 39%;
+    }
+}
+
+
+
+@media  screen and (max-width : 768px){ 
+
+    input {
+        width: 500px;
+    }
+
+    .inout-box {
+        padding: 40px;
+    }
+    .inout-box h2 {
+        right: 26%;
+    }
+
+    .two {
+        left: 7%;
+        /* padding: 22px; */
+    }
+
+    .quantity1 {
+        position: relative;
+        left: 12%;
+        margin-top: -3.5%;
+    }
+    h2.price {
+        position: absolute;
+        top: -2%;
+        margin-right:-193px;
+    }
+    h2.quantity1 {
+        position: relative;
+        left: 14%;
+
+    }
+     .p-price {
+        right: 6%;
+        width: 350px;
+    }
+    .p-quantity {
+        width: 350px;
+        right: 1%;
+        left: -6%;
+    }
+    .price {
+        left: -87%;
+        margin-top: -3%;
+    }
+
+
+    ::placeholder {
+        
+        font-size: 24px;
+        
+    }
+
+    button {
+        height: 68px;
+        left: 23%;
+    }
+
+}
+
+
+
+@media screen and (max-width:468px){
 
     input {
         width: 376px;
@@ -244,7 +347,7 @@ input {
         width: 197px;
         left: 1%;
         top: 9%;
-        padding: 10px;
+        padding: 22px;
     }
     .p-price {
         right: 6%;
@@ -255,10 +358,6 @@ input {
         right: 1%;
         left: -6%;
     }
-    .price{
-        left: -7%;
-    }
-
 
     ::placeholder {
         
@@ -269,9 +368,18 @@ input {
     button {
         height: 68px;
     }
-    
 
 }
+
+/* @media screen and (min-width: 400px) and (max-width:70px) {
+
+    input {
+        width: 2000px;
+    }
+} */
+
+
+
 
 
 
