@@ -48,15 +48,15 @@ session_start();
                 <div class="input-box">
                     <input type ="password" name="password" placeholder="Password" required>
                     <span class="icon1"> <i class="fa fa-lock" aria-hidden="true"></i></span>
-                </div>
-
-                <div class= "input-checkbox">
-                <input type="checkbox" class="checkbx"  name="chkbox" id="checkbox"> 
                     <p class="remember">Remember Me</p>
-                    <div class="text"><a href="#">Forgot password?</a></div>
+                    <button type="submit" name="login-submit">Log in</button>
+                    <div class= "input-checkbox">
+                <input type="checkbox" class="checkbx"  name="chkbox" id="checkbox"> 
                
                 </div>
-                <button type="submit" name="login-submit">Log in</button>
+                </div>
+
+                
          </div>  
 
         </div>  
