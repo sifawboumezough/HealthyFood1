@@ -72,7 +72,7 @@
 
 
                 <div class="inout-box">
-                    <h2 class="Image">Choose a Photo</h2>
+                    <h2 class="Image">image</h2>
                     <input type ="file" name="image" >
                 </div>
 
