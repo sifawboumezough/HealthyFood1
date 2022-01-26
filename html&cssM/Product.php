@@ -1,5 +1,6 @@
 <?php
          include_once "./connect/dbConn.php";
+         include "addpr-inc.php";
                 
 ?>
 
@@ -61,8 +62,8 @@
                 <th>Image</th>
                 <th>ID</th>
                 <th>Name</th>
-                <th>Quantity</th>
-                <th>Price</th>
+                <th>Quantity per KG</th>
+                <th>Price per $</th>
                 <th>Action</th>
             </tr>
             <?php  
@@ -74,7 +75,7 @@
                 {
             ?>
             <tr>
-                <td><img src="<?php echo $row["product_img"]; ?>"></td>
+                <td><img src="uploads/<?php echo $row["product_img"]; ?>"></td>
                 <td><?php echo $row['product_id']; ?></td>
                 <td><?php echo $row['product_name']; ?></td>
                 <td><?php echo $row['product_qty']; ?></td>

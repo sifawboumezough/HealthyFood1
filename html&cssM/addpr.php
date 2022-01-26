@@ -1,8 +1,3 @@
-
-<?php
-          require "./includes/addprdbh-inc.php";
-                
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,36 +48,34 @@
              </div>
         </div>
     </div>
-    
-<form action="includes/addpr-inc.php" method="POST"> 
-    <section class="addproduct">
-            <div class="inputboxes">
-                <div class="inout-box">
-                    <h2 class="Name">Name</h2>
-                    <input class ="prname"type ="text" name="prname" placeholder="Enter the Product's Name" required>
+
+    <form action="addpr-inc.php" method="POST" enctype="multipart/form-data"> 
+        <section class="addproduct">
+                <div class="inputboxes">
+                    <div class="inout-box">
+                        <h2 class="Name">Name</h2>
+                        <input class ="prname"type ="text" name="prname" placeholder="Product Name" required>
+                    </div> 
+                    <div class="inout-box">  
+                            <div class="two">     
+                                <h2 class="price">Price</h2>   
+                                <input  class="p-price"type ="number"  name="price" placeholder="Product Price" min="1" required>
+                                <h2 class="quantity1">Quantity</h2>
+                                <input  class="p-quantity"type="number" name="quantity" placeholder="Quantity per Kg" min="200" required>
+                            </div>
+                    </div>
+
+
+                    <div class="inout-box">
+                        <h2 class="Image">image</h2>
+                        <input type ="file" name="image" >
+                    </div>
+
+
+                    <button type="submit" name="add-product">Submit</button>
                 </div>
-
-                <div class="inout-box">  
-                        <div class="two">     
-                            <h2 class="price">Price</h2>   
-                            <input  class="p-price"type ="text" name="price" placeholder="Product Price" required>
-                            <h2 class="quantity1">Quantity</h2>
-                            <input  class="p-quantity"type="text" name="quantity" placeholder="Quantity per Kg" required>
-                        </div>
-                </div>
-
-
-                <div class="inout-box">
-                    <div class="resize">
-                    <h2 class="Image">image</h2>
-                    <input type ="file" name="image" ></div>
-                </div>
-
-
-                <button type="submit" name="add-product">Submit</button>
-            </div>
-    </section>
- </form>
+        </section>
+    </form>
 
 
 

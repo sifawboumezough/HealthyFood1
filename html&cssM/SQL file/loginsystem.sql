@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2022 at 12:01 AM
+-- Generation Time: Jan 26, 2022 at 11:05 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -41,7 +41,9 @@ INSERT INTO `employees` (`idEmployees`, `emailEmployees`, `pwdUsers`) VALUES
 (1, 'elmahdi.gli2@mm.com', 'elmahdi**123'),
 (2, 'sifaw.bmz@mm.com', 'sifawbmz**123'),
 (3, 'ussef.you@yy.com', 'usseflxrd**123'),
-(4, 'yassine.you@yy.com', 'yassineyassine*123');
+(4, 'yassine.you@yy.com', 'yassineyassine*123'),
+(5, 'gliouinemahdi@gmail.com', '123456'),
+(6, 'lonelycrow1@gmail.com', '123456');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +63,7 @@ ALTER TABLE `employees`
 -- AUTO_INCREMENT for table `employees`
 --
 ALTER TABLE `employees`
-  MODIFY `idEmployees` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idEmployees` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -1,11 +1,16 @@
 <?php
 include_once "./connect/dbConn.php";
 
-$id = $_GET['product_id'];
+if(isset($_POST['sub']))
+{
+    $id=$_POST['id'];
+}
 $qry = mysqli_query($conn, "SELECT * FROM products WHERE `product_id`='$id'");
 $row = mysqli_fetch_array($qry);
+
 if(isset($_POST['update']))
 {  
+    $id=$_POST['test'];
     $qty = $_POST['Quantity'];
     $price = $_POST['Price'];
 
@@ -25,6 +30,7 @@ if(isset($_POST['update']))
 <div class="center">
     <h1>Update Data</h1>
     <form method="POST">
+        <input type="hidden" name="test" value="<?php echo $id?>">
         <div class="inputbox">
             <input type="text" name="Quantity" value="<?php echo $row['product_qty'] ?>" placeholder="Enter New Quantity" Required>
         </div>

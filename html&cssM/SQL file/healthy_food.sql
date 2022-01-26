@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 24, 2022 at 05:08 PM
+-- Generation Time: Jan 26, 2022 at 11:05 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -40,23 +40,25 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`product_img`, `product_id`, `product_name`, `product_qty`, `product_price`) VALUES
-('\\phpsandbox\\html&cssM\\images\\img2.png', 25, 'Eggplant', '600KG', '4$'),
-('\\phpsandbox\\html&cssM\\images\\img14.png', 27, 'Red Pepper', '850KG', '6$'),
-('\\phpsandbox\\html&cssM\\images\\img17.png', 30, 'Cucumber', '299KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img18.png', 31, 'Broccoli', '1500KG', '22$'),
-('\\phpsandbox\\html&cssM\\images\\img1.png', 32, 'Potato', '600KG', '12$'),
-('\\phpsandbox\\html&cssM\\images\\img3.png', 33, 'Pomegranate', '700KG', '5$'),
-('\\phpsandbox\\html&cssM\\images\\img9.png', 35, 'Lime', '800KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img11.png', 36, 'Corn', '500KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img12.png', 37, 'Grape', '400KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img4.png', 38, 'Blackberry', '400KG', '4$'),
-('\\phpsandbox\\html&cssM\\images\\img5.png', 39, 'Pear', '500KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img6.png', 40, 'Prune', '650KG', '4$'),
-('\\phpsandbox\\html&cssM\\images\\img7.png', 41, 'Apple', '400KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img8.png', 42, 'Strawberry', '400KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img10.png', 43, 'Onion', '400KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img15.png', 44, 'Tomato', '800KG', '2$'),
-('\\phpsandbox\\html&cssM\\images\\img16.png', 45, 'Carrot', '400KG', '2$');
+('img6.png', 69, 'Prune', '400KG', '3$'),
+('img7.png', 70, 'Apple', '800KG', '4$'),
+('img2.png', 72, 'Eggplant', '500KG', '2$'),
+('img1.png', 73, 'Potato', '300KG', '3$'),
+('img3.png', 74, 'Pomegranate', '200KG', '2$'),
+('img4.png', 75, 'Blueberry', '500KG', '5$'),
+('img5.png', 76, 'Pear', '200KG', '4$'),
+('img8.png', 77, 'Strawberry', '400KG', '4$'),
+('img9.png', 78, 'Lime', '300KG', '1$'),
+('img10.png', 79, 'Onion', '337KG', '1$'),
+('img11.png', 80, 'Corn', '200KG', '2$'),
+('img12.png', 81, 'Grape', '200KG', '2$'),
+('img13.png', 82, 'Mango', '300KG', '3$'),
+('img14.png', 83, 'Red Pepper', '200KG', '2$'),
+('img15.png', 84, 'Tomato', '200KG', '1$'),
+('img16.png', 85, 'Carrot', '200KG', '1$'),
+('img17.png', 86, 'Cucumber', '200KG', '1$'),
+('img18.png', 87, 'Broccoli', '200KG', '3$'),
+('5-mushroom-png-image-thumb.png', 88, 'Mushroom', '200KG', '2$');
 
 --
 -- Indexes for dumped tables
@@ -76,7 +78,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -140,6 +140,7 @@ input {
     height: 80px;
     padding-left: 3%;
     font-size: 26px;
+    padding-right: 20px;
 }
 ::placeholder {
     font-family:  Helvetica;
@@ -252,34 +253,44 @@ input {
     }
 
 }
-@media  screen and(max-width:768px){
-    /* input,
+@media  screen and (max-width:768px){
+    input,
     input::-webkit-input-placeholder{
         font-size: 21px;
         width: 68vw;
         line-height: 36px;
-    } */
+    }
     .two {
         display: block;
-        width: 197px;
+        width: 80vw;
         left: 1%;
         top: 9%;
         padding: 22px;
     }
     .p-price{
-        left: -2%;
+        left: 6%;
+        width: 68vw;
     }
     .p-quantity{
-        width: 26vw;
-        right: 6%;
+        width: 68vw;
+        right: -6%;
+        margin-top: 17%;
+    }
+    .price{
+        left: -19vw;
+    }
+    .quantity1{
+        top: 15.5vh;
+        left: -17vw;
+    }
+    .inout-box h2{
+        right: 22vw;
+    }
+    .wrapper .section .top-logo img{
+        margin-left: 31vw;
     }
 
 }
-
-
-
-
-
 
 @media screen and (max-width:468px){
 
@@ -307,6 +318,7 @@ input {
     }
     .p-price { 
         width: 83vw;
+        left: -4%;
     }
     .p-quantity {
         width: 83vw;
