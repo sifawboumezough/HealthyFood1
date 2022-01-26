@@ -8,16 +8,13 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* html {
-    height: 1900px;
-} */
 
 body{
      background: #ffffff;
 }
 
 .wrapper .sidebar{
-    background-color: rgb(118, 186 , 27);
+    background-color: rgb(118, 186 , 27, 0.8);
     z-index: 1;
     position: fixed;
     top: 0;
@@ -63,7 +60,8 @@ body{
 .wrapper .sidebar ul li a.active,
 .wrapper .sidebar ul li .logout:hover{
     color: #1E5631;
-    /* border-right:2px solid #1E5631; */
+    background: #ffffff;
+    border-right:2px solid #1E5631;
 }
 
 .wrapper .sidebar ul li a:hover .icon,
@@ -107,25 +105,25 @@ body.active .wrapper .section{
 }
 
 .wrapper .section .top-logo img{
-   margin-left: 35vw;
+   margin-left: 42vw;
 }
 
 
 section {
     width: 100%;
-    /* background-color: aqua; */
+    position: relative;
+    top: 17vh;
 }
 
 .inputboxes {
     width: 100%;
-    /* background-color: black; */
-    /* position: relative; */
     text-align: center;
 }
 
 .inout-box {
     padding: 40px;  
 }
+
 
 .inout-box h2 {
     color: #1E5631;
@@ -138,8 +136,10 @@ input {
     background: #76BA1B;
     border: 3px solid #FFF9F9;
     border-radius: 50px;
-    width: 1011px;
+    width: 48vw;
     height: 80px;
+    padding-left: 3%;
+    font-size: 26px;
 }
 ::placeholder {
     font-family:  Helvetica;
@@ -154,25 +154,24 @@ input {
 .two {
     display: flex;
     position: relative;
-    left: 20%;
+    justify-content: center;
 }
 
 .p-price {
-    width: 505.2px;
+    width: 25vw;
     position: relative;
-    right: 1%;
     
 }
 
 .p-quantity {
-    width: 505.5px;
+    width: 21vw;
     position: relative;
-    right: 6%;
+    right: 3%;
 }
 
 .quantity1{
     position: relative;
-    left: 2%;
+    left: 5%;
     margin-top: -1.5%;
 }
 .price{
@@ -185,163 +184,81 @@ input {
  button {
     font-family: Helvetica;
     font-size: 38px;
-    line-height: 12px;
+    line-height: 1px;
      width:246px;
-     height: 86px;
+     height: 70px;
      border-radius: 50px;
      background-color: #1E5631;
      color: #ACDF87;
      border : 3px solid #FFF9F9;
      position: absolute;
-     right:23%;
+     right:26%;
     cursor: pointer;
+ }
+ button:hover{
+     background-color: #ACDF87;
+     color: #1E5631;
+     border: 3px solid #1E5631;
  }
 
   /* Media Queries */
-
-@media only screen and (max-width:1600px) {
-   .wrapper .section .top-logo img{
-     margin-left: 36vw;
- }
-}
-@media only screen and (max-width:850px){
-   .wrap{
-       top: 93px;
-   }
-}
-@media only screen and(max-width:768px){
- .wrapper .section .top-logo img{
-     margin-left: 31vw;
- }
-}
-
-
-@media only screen and (max-width: 468px) {
-   
- .wrapper .section .top-logo img{
-     margin-left: 19vw;
- }
- .wrap{
-     top: 160px;
-     width: 94%;
-     left: 52%;
- }
-
-}
-
-@media  screen and (max-width : 1024px){ 
-
-    input {
-        width: 700px;
+@media  screen and (max-width:1440px){
+    input{
+        width: 54vw;
     }
-
-    .inout-box {
-        padding: 50px;
+    .p-quantity{
+        width: 24vw;
+        right: 5%;
     }
-    .inout-box h2 {
-        right: 26%;
+    .p-price{
+        width: 28vw;
     }
-
-    .two {
-        display: flex;
-        position: relative;
-        left: 0%;
+    .quantity1{
+        margin-top: -2%;
     }
-    .quantity1 {
-        position: relative;
-        left: 8%;
-        margin-top: -2.5%;
-    }
-    .price {
-        position: relative;
-        left: 10%;
-        margin-top: -2.5%;
-    }
-
-    button {
-        height: 68px;
-        left: 39%;
+    .price{
+        margin-top: -2%;
     }
 }
 
-
-
-@media  screen and (max-width : 768px){ 
-
-    input {
-        width: 500px;
+@media screen and (max-width:1024px){
+    input,
+    input::-webkit-input-placeholder{
+        font-size: 26px;
+        width: 61vw;
+        line-height: 36px;
     }
-
-    .inout-box {
-        padding: 40px;
+    .p-price{
+        width: 25vw;
+        left: -4%;
     }
-    .inout-box h2 {
-        right: 26%;
+    .p-quantity{
+        width: 25vw;
+        right: 2%;
     }
-
-    .two {
-        left: 7%;
-        /* padding: 22px; */
+    .wrapper .section .top-logo img{
+        margin-left: 36vw;
     }
-
-    .quantity1 {
-        position: relative;
+    button{
+        right: 19%;
+    }
+    .price{
+        left: 73px;
+        margin-top: -3%;
+    }
+    .quantity1{
         left: 12%;
-        margin-top: -3.5%;
-    }
-    h2.price {
-        position: absolute;
-        top: -2%;
-        margin-right:-193px;
-    }
-    h2.quantity1 {
-        position: relative;
-        left: 14%;
-
-    }
-     .p-price {
-        right: 6%;
-        width: 350px;
-    }
-    .p-quantity {
-        width: 350px;
-        right: 1%;
-        left: -6%;
-    }
-    .price {
-        left: -87%;
         margin-top: -3%;
     }
 
-
-    ::placeholder {
-        
-        font-size: 24px;
-        
-    }
-
-    button {
-        height: 68px;
-        left: 23%;
-    }
-
 }
-
-
-
-@media screen and (max-width:468px){
-
-    input {
-        width: 376px;
-    }
-
-    .inout-box {
-        padding: 25px;
-    }
-    .inout-box h2 {
-        right: 26%;
-    }
-
+@media  screen and(max-width:768px){
+    /* input,
+    input::-webkit-input-placeholder{
+        font-size: 21px;
+        width: 68vw;
+        line-height: 36px;
+    } */
     .two {
         display: block;
         width: 197px;
@@ -349,14 +266,53 @@ input {
         top: 9%;
         padding: 22px;
     }
-    .p-price {
+    .p-price{
+        left: -2%;
+    }
+    .p-quantity{
+        width: 26vw;
         right: 6%;
-        width: 376px;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width:468px){
+
+    input,
+    input::-webkit-input-placeholder{
+        font-size: 25px;
+        width: 83vw;
+        line-height: 36px;
+    }
+
+    .inout-box {
+        padding: 25px;
+        padding-bottom: 0px;
+    }
+    .inout-box h2 {
+        right: 26%;
+    }
+
+    .two {
+        display: block;
+        width: 83vw;
+        left: 1%;
+        top: 9%;
+        padding: 22px;
+    }
+    .p-price { 
+        width: 83vw;
     }
     .p-quantity {
-        width: 376px;
+        width: 83vw;
         right: 1%;
-        left: -6%;
+        left: -4%;
+        margin-top: 17%;
     }
 
     ::placeholder {
@@ -367,16 +323,23 @@ input {
 
     button {
         height: 68px;
+        margin-top: 10%;
+    }
+    .wrapper .section .top-logo img{
+        position: static;
+        margin-left: 18vw;
+        top: 0.5%;
+    }
+
+    .price{
+        left: -86px;
+    }
+    .quantity1{
+        left: -22%;
+        top: 8vh;
     }
 
 }
-
-/* @media screen and (min-width: 400px) and (max-width:70px) {
-
-    input {
-        width: 2000px;
-    }
-} */
 
 
 

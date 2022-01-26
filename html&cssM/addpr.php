@@ -8,6 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link rel="stylesheet" href="./styles/addpr.css">
     <!-- font awesome 5CDN -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -21,13 +22,13 @@
             </div>
             <ul>
                 <li>
-                    <a href="Product.php" class="active">
+                    <a href="Product.php" >
                         <span class="icon"><i class="fas fa-shopping-basket"></i>
                         <span class="item">Products</span>
                     </a>
                 </li>    
                 <li>
-                    <a href="addpr.php">
+                    <a href="addpr.php" class="active">
                         <span class="icon"><i class="fas fa-plus-circle"></i>    
                         <span class="item">Add Product</span>
                     </a>
@@ -63,28 +64,23 @@
 
                 <div class="inout-box">  
                         <div class="two">     
-                        <h2 class="price">Price</h2>   
-                        <input  class="p-price"type ="text" name="price" placeholder="Product Price" required>
-                        <h2 class="quantity1">Quantity</h2>
-                        <input type class="p-quantity"="text" name="quantity" placeholder="Quantity per Kg" required>
+                            <h2 class="price">Price</h2>   
+                            <input  class="p-price"type ="text" name="price" placeholder="Product Price" required>
+                            <h2 class="quantity1">Quantity</h2>
+                            <input  class="p-quantity"type="text" name="quantity" placeholder="Quantity per Kg" required>
                         </div>
                 </div>
 
 
                 <div class="inout-box">
+                    <div class="resize">
                     <h2 class="Image">image</h2>
-                    <input type ="file" name="image" >
+                    <input type ="file" name="image" ></div>
                 </div>
 
 
                 <button type="submit" name="add-product">Submit</button>
-
-                
-
-
-
             </div>
-
     </section>
  </form>
 

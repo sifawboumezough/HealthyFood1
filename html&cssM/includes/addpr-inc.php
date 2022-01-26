@@ -19,8 +19,8 @@ include_once "./addprdbh-inc.php";
 		move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $newFilename);
 		$location="upload/" . $newFilename;
  
-		mysqli_query($con,"insert into image_tb (img_location) values ('$location')");
-		header('location:index.php');
+		mysqli_query($connection,"insert into image_tb (img_location) values ('$location')");
+		header('location:Product.php');
 	}else{
 		echo "<script>alert('No Image selected.');location.replace('../addpr.php');</script>";
 	}

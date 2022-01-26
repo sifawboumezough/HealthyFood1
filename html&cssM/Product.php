@@ -21,7 +21,7 @@
             </div>
             <ul>
                 <li>
-                    <a href="Product.php" class="">
+                    <a href="Product.php" class="active">
                         <span class="icon"><i class="fas fa-shopping-basket"></i>
                         <span class="item">Products</span>
                     </a>
@@ -79,7 +79,13 @@
                 <td><?php echo $row['product_name']; ?></td>
                 <td><?php echo $row['product_qty']; ?></td>
                 <td><?php echo $row['product_price']; ?></td>
-                <td><a href="edit.php?product_id=<?php echo $row['product_id']; ?>"> <button  class="btn"><i class="fas fa-sync"></i></button> <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button class="btn"><i class="fas fa-trash-alt"></i></button></a> </td>
+                <td><div class="better">
+                    <form action="edit.php" method="POST">
+                        <input type="hidden" name="id" value="<?php echo $row['product_id']; ?>"> <button  class="btn" type="submit" name="sub"><i class="fas fa-sync"></i></button> 
+                    </form>
+                        <a href="delete.php?product_id=<?php echo $row['product_id']; ?>"> <button class="btn"><i class="fas fa-trash-alt"></i></button></a> 
+                        </div>
+                </td>
             </tr>
             <?php
                 }
